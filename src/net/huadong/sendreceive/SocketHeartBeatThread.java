@@ -15,9 +15,7 @@ public class SocketHeartBeatThread extends Thread{
 	private String ip="";
 	/**Éè±¸¶Ë¿ÚºÅ**/
 	private int port=0;
-    
 	private Socket socket;
-	
 	private MyRunnable1 myRunnable;
     public void SocketHeartBeatThread (Socket msocket) {
     	this.socket=msocket;

@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.HashMap;
+import java.util.Hashtable;
 
 import net.huadong.util.SocketUtil;
 
@@ -19,7 +21,6 @@ public class SocketClient {
 //		System.out.println(nn+""+nn.length()+"===="+nnn+"=="+bytes);
 		MyRunnable1 m1=new MyRunnable1();
 		m1.setIH("192.168.1.235", 27011);
-		
 		Thread t1=new Thread(m1);
 		t1.start();
 		
